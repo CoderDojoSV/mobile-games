@@ -1,4 +1,4 @@
-# Create your own game High Five
+# Create your own game: High Five
 
 Students get to write their first game from scratch. High five is a very
 simplified reaction game similar to Simon Says.
