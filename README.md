@@ -19,8 +19,8 @@ well as create your own brand new game using tools.
 [:rocket: Section 0][0]: Installation and Introduction to Corona SDK and Lua  
 [:rocket: Section 1][1]: Customize the game Robot Finds Kitten  
 [:rocket: Section 2][2]: Customize the game Speed Maze  
-[:rocket: Section 3][3]: Create your own game High Five  
-Section 4: Create your own game Avoid All The Things  
+[:rocket: Section 3][3]: Create your own game: High Five  
+[:rocket: Section 4][4]: Create your own game Avoid All The Things  
 Section 5: Something Amazing!
 
 ## Requirements
@@ -41,3 +41,5 @@ younger coders who meet the requirements are welcome.
 [1]: section-01/
 [2]: section-02/
 [3]: section-03/
+[4]: section-04/
+[5]: section-05/
