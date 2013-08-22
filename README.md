@@ -16,9 +16,9 @@ well as create your own brand new game using tools.
 
 ## Sections
 
-[Section 0][]: Installation and Introduction to Corona SDK and Lua
-Section 1: Customize the game Robot Finds Kitten
-Section 2: Customize the game Speed Maze
+[:rocket: Section 0][0]: Installation and Introduction to Corona SDK and Lua  
+[:rocket: Section 1][1]: Customize the game Robot Finds Kitten  
+[:rocket: Section 2][2]: Customize the game Speed Maze
 Section 3: Create your own game High Five
 Section 4: Create your own game Avoid All The Things
 Section 5: Something Amazing!
@@ -37,4 +37,6 @@ Section 5: Something Amazing!
 The target age range for this class is fifth grade through high school but
 younger coders who meet the requirements are welcome.
 
-[Section 0]: section-00/
+[0]: section-00/
+[1]: section-01/
+[2]: section-02/
