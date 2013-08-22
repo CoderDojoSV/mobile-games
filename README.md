@@ -37,6 +37,8 @@ Section 5: Something Amazing!
 The target age range for this class is fifth grade through high school but
 younger coders who meet the requirements are welcome.
 
+##### See the [rationale](RATIONALE.md) for this course.
+
 [0]: section-00/
 [1]: section-01/
 [2]: section-02/
