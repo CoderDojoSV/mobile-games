@@ -13,4 +13,4 @@ needs to navigate through a vast land to find her.
 ## Adding your own hiding places
  
 
-[rfk]: robotfindskitten.org
+[rfk]: http://robotfindskitten.org
