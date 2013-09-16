@@ -6,11 +6,19 @@ needs to navigate through a vast land to find her.
 
 ## Getting the source code
 
+Download [this file][corona-source-zip] and save it to your mobile games folder.
+
 ## Exploring the map grid
 
 ## Adding your own sayings
 
 ## Adding your own hiding places
- 
+
+
+## Mentor Notes
+
+Check out the [source repository][repo]
 
 [rfk]: robotfindskitten.org
+[repo]: https://github.com/nuclearsandwich/robotfindskitten-corona
+[corona-source-zip]: https://github.com/nuclearsandwich/robotfindskitten-corona/archive/master.zip
