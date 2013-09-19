@@ -14,7 +14,7 @@ work as long as you:
 For the full legal text of the documentation license see
 http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
 
-For commercial licensing request please [create an issue](https://github.com/CoderDojoSV/mobile-games/issues/new).
+For commercial licensing requests please [create an issue](https://github.com/CoderDojoSV/mobile-games/issues/new).
 
 All code in this document is licensed under the MIT License: Do what you like
 with it so long as the copyright notice is preserved and included in all
