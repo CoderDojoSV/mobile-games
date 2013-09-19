@@ -19,6 +19,6 @@ Download [this file][corona-source-zip] and save it to your mobile games folder.
 
 Check out the [source repository][repo]
 
-[rfk]: robotfindskitten.org
+[rfk]: http://robotfindskitten.org
 [repo]: https://github.com/nuclearsandwich/robotfindskitten-corona
 [corona-source-zip]: https://github.com/nuclearsandwich/robotfindskitten-corona/archive/master.zip
