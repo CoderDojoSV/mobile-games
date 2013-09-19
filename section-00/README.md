@@ -57,3 +57,8 @@ to download and install brackets.
 #### On Windows
 
 ## The Lua Programming Language
+
+[Testing Lua in the browser](http://repl.it/languages/lua)
+
+[Welcome to Lua Worksheet][worksheet]
+[worksheet]: #
