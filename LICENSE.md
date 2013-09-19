@@ -1,3 +1,5 @@
+Copyright (c) 2013 The CoderDojo SV Mobile Games authors
+
 Documentation and written content are licensed under the Creative Commons
 CC BY-NC-SA 3.0 license.
 
@@ -17,8 +19,6 @@ For commercial licensing request please [create an issue](https://github.com/Cod
 All code in this document is licensed under the MIT License: Do what you like
 with it so long as the copyright notice is preserved and included in all
 distributions.
-
-Copyright (c) 2013 The CoderDojo SV Mobile Games authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
