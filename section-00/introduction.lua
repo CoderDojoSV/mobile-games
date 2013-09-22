@@ -34,7 +34,7 @@ consider( "Do you know the way to San Jose?" )
 consider( 5 )
 consider( 4 + 3 )
 
--- Operations in Lua follow the algebraic order of operations remember PEMDAS?
+-- Operations in Lua follow the algebraic order of operations. Remember PEMDAS?
 
 -- * __P__arentheses
 consider( (5 + 3) * 2 )
@@ -47,13 +47,15 @@ consider( 6 / 3 )
 -- * __A__ddition
 consider( 5 + 9 )
 -- * __S__ubtraction
-consider( 9 + 3 )
+consider( 9 - 3 )
 
 -- Numbers in Lua are all decimals. Some languages treat whole numbers and
 -- decimal numbers differently, but Lua doesn't. There is one operation that we
 -- haven't mentioned yet. It's called "mod" or "remainder" and uses the `%` sign
 -- but it's not a percentage. It's the remainder left over after you do long
--- division. For example, if you want to find out whether a number is even or
+-- division.
+
+-- For example, if you want to find out whether a number is even or
 -- odd, you can check by looking at the remainder when you divide by two. If
 -- it's 1, the number is odd. Otherwise it's 0.
 consider( 5 % 2 == 1 )
