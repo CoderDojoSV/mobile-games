@@ -278,7 +278,20 @@ consider( <span class="number">4</span> + <span class="number">3</span> )</pre><
 decimal numbers differently, but Lua doesn‘t. There is one operation that we
 haven’t mentioned yet. It&#39;s called “mod” or “remainder” and uses the <code>%</code> sign
 but it‘s not a percentage. It’s the remainder left over after you do long
-division. For example, if you want to find out whether a number is even or
+division.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>For example, if you want to find out whether a number is even or
 odd, you can check by looking at the remainder when you divide by two. If
 it‘s 1, the number is odd. Otherwise it’s 0.</p>
 
@@ -290,11 +303,11 @@ consider( <span class="number">6</span> % <span class="number">2</span> == <span
         </li>
         
         
-        <li id="section-18">
+        <li id="section-19">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-18">&#182;</a>
+                <a class="pilcrow" href="#section-19">&#182;</a>
               </div>
               <p>You can even do this for super huge numbers like 17^13</p>
 
@@ -305,28 +318,13 @@ consider( <span class="number">6</span> % <span class="number">2</span> == <span
         </li>
         
         
-        <li id="section-19">
-            <div class="annotation">
-              
-              <div class="pilwrap for-h3">
-                <a class="pilcrow" href="#section-19">&#182;</a>
-              </div>
-              <h3>True, false, and nil</h3>
-
-            </div>
-            
-        </li>
-        
-        
         <li id="section-20">
             <div class="annotation">
               
-              <div class="pilwrap ">
+              <div class="pilwrap for-h3">
                 <a class="pilcrow" href="#section-20">&#182;</a>
               </div>
-              <p>true and false are called “boolean” values, named after George Boole, an
-English mathematician who studied logic. His work laid the foundations for
-the computers of today!</p>
+              <h3>True, false, and nil</h3>
 
             </div>
             
@@ -339,12 +337,11 @@ the computers of today!</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-21">&#182;</a>
               </div>
-              <p>Lua has boolean values <code>true</code> and <code>false</code> and a special value called <code>nil</code>.</p>
+              <p>true and false are called “boolean” values, named after George Boole, an
+English mathematician who studied logic. His work laid the foundations for
+the computers of today!</p>
 
             </div>
-            
-            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">true</span> )
-consider( <span class="keyword">false</span> )</pre></div></div>
             
         </li>
         
@@ -355,11 +352,12 @@ consider( <span class="keyword">false</span> )</pre></div></div>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-22">&#182;</a>
               </div>
-              <p>Nil means “no value”.</p>
+              <p>Lua has boolean values <code>true</code> and <code>false</code> and a special value called <code>nil</code>.</p>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">nil</span> )</pre></div></div>
+            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">true</span> )
+consider( <span class="keyword">false</span> )</pre></div></div>
             
         </li>
         
@@ -370,9 +368,11 @@ consider( <span class="keyword">false</span> )</pre></div></div>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-23">&#182;</a>
               </div>
-              <p>There are also logical operations</p>
+              <p>Nil means “no value”.</p>
 
             </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">nil</span> )</pre></div></div>
             
         </li>
         
@@ -382,6 +382,19 @@ consider( <span class="keyword">false</span> )</pre></div></div>
               
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p>There are also logical operations</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
               </div>
               <p><code>and</code> is only true of both the left and right side are true</p>
 
@@ -395,11 +408,11 @@ consider( <span class="keyword">false</span> <span class="keyword">and</span> <s
         </li>
         
         
-        <li id="section-25">
+        <li id="section-26">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-25">&#182;</a>
+                <a class="pilcrow" href="#section-26">&#182;</a>
               </div>
               <p><code>or</code> is true of either the left or the right side are true</p>
 
@@ -413,11 +426,11 @@ consider( <span class="keyword">false</span> <span class="keyword">or</span> <sp
         </li>
         
         
-        <li id="section-26">
+        <li id="section-27">
             <div class="annotation">
               
               <div class="pilwrap for-h2">
-                <a class="pilcrow" href="#section-26">&#182;</a>
+                <a class="pilcrow" href="#section-27">&#182;</a>
               </div>
               <h2>Lua Variables</h2>
 
@@ -426,11 +439,11 @@ consider( <span class="keyword">false</span> <span class="keyword">or</span> <sp
         </li>
         
         
-        <li id="section-27">
+        <li id="section-28">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-27">&#182;</a>
+                <a class="pilcrow" href="#section-28">&#182;</a>
               </div>
               <p>In Lua, you keep track of your stuff with variables. A variable isn‘t like
 a variable in algebra. It’s really just a name you give to something so you
@@ -442,11 +455,11 @@ put values into. There are two types of variables in Lua, global and local.</p>
         </li>
         
         
-        <li id="section-28">
+        <li id="section-29">
             <div class="annotation">
               
               <div class="pilwrap for-h3">
-                <a class="pilcrow" href="#section-28">&#182;</a>
+                <a class="pilcrow" href="#section-29">&#182;</a>
               </div>
               <h3>Local variables</h3>
 
@@ -455,11 +468,11 @@ put values into. There are two types of variables in Lua, global and local.</p>
         </li>
         
         
-        <li id="section-29">
+        <li id="section-30">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-29">&#182;</a>
+                <a class="pilcrow" href="#section-30">&#182;</a>
               </div>
               <p>Local variables are created with the <code>local</code> keyword they belong to the area
 around the variable declaration.</p>
@@ -471,11 +484,11 @@ around the variable declaration.</p>
         </li>
         
         
-        <li id="section-30">
+        <li id="section-31">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-30">&#182;</a>
+                <a class="pilcrow" href="#section-31">&#182;</a>
               </div>
               <p>You can also create a variable with a starting value. If you don&#39;t specify a
 starting value, the variable will start out as <code>nil</code>.</p>
@@ -487,11 +500,11 @@ starting value, the variable will start out as <code>nil</code>.</p>
         </li>
         
         
-        <li id="section-31">
+        <li id="section-32">
             <div class="annotation">
               
               <div class="pilwrap for-h3">
-                <a class="pilcrow" href="#section-31">&#182;</a>
+                <a class="pilcrow" href="#section-32">&#182;</a>
               </div>
               <h3>Global variables</h3>
 
@@ -500,11 +513,11 @@ starting value, the variable will start out as <code>nil</code>.</p>
         </li>
         
         
-        <li id="section-32">
+        <li id="section-33">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-32">&#182;</a>
+                <a class="pilcrow" href="#section-33">&#182;</a>
               </div>
               <p>Sometimes you want a variable to be shared across your entire game. You can
 use a global variable to do this. Maybe you want to keep track of whose turn
@@ -518,11 +531,11 @@ variable without using the <code>local</code> keyword</p>
         </li>
         
         
-        <li id="section-33">
+        <li id="section-34">
             <div class="annotation">
               
               <div class="pilwrap for-h3">
-                <a class="pilcrow" href="#section-33">&#182;</a>
+                <a class="pilcrow" href="#section-34">&#182;</a>
               </div>
               <h3>Accessing a variable&#39;s value</h3>
 
@@ -531,11 +544,11 @@ variable without using the <code>local</code> keyword</p>
         </li>
         
         
-        <li id="section-34">
+        <li id="section-35">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-34">&#182;</a>
+                <a class="pilcrow" href="#section-35">&#182;</a>
               </div>
               <p>To access a variable‘s value, just use the variable’s name where you want the
 value to be used.</p>
@@ -551,11 +564,11 @@ value to be used.</p>
         </li>
         
         
-        <li id="section-35">
+        <li id="section-36">
             <div class="annotation">
               
               <div class="pilwrap for-h2">
-                <a class="pilcrow" href="#section-35">&#182;</a>
+                <a class="pilcrow" href="#section-36">&#182;</a>
               </div>
               <h2>Lua Tables</h2>
 
@@ -564,11 +577,11 @@ value to be used.</p>
         </li>
         
         
-        <li id="section-36">
+        <li id="section-37">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-36">&#182;</a>
+                <a class="pilcrow" href="#section-37">&#182;</a>
               </div>
               <p>Most of the time, we don‘t just want a single variable, we have a collection
 of values that are all related to each other. Maybe we’re keeping track of
@@ -581,11 +594,11 @@ a player&#39;s name, score, and remaining lives. We could use three variables.</
         </li>
         
         
-        <li id="section-37">
+        <li id="section-38">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-37">&#182;</a>
+                <a class="pilcrow" href="#section-38">&#182;</a>
               </div>
               <p>but what happens when we have two or three players? That&#39;s a lot of
 variables! Tables are Lua&#39;s way of organizing data.</p>
@@ -595,11 +608,11 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
         </li>
         
         
-        <li id="section-38">
+        <li id="section-39">
             <div class="annotation">
               
               <div class="pilwrap for-h3">
-                <a class="pilcrow" href="#section-38">&#182;</a>
+                <a class="pilcrow" href="#section-39">&#182;</a>
               </div>
               <h3>Creating Tables</h3>
 
@@ -608,11 +621,11 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
         </li>
         
         
-        <li id="section-39">
+        <li id="section-40">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-39">&#182;</a>
+                <a class="pilcrow" href="#section-40">&#182;</a>
               </div>
               <p>Creating tables is easy. You can make them empty:</p>
 
@@ -623,11 +636,11 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
         </li>
         
         
-        <li id="section-40">
+        <li id="section-41">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-40">&#182;</a>
+                <a class="pilcrow" href="#section-41">&#182;</a>
               </div>
               <p>Or give them a starting set of values</p>
 
@@ -642,11 +655,11 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
         </li>
         
         
-        <li id="section-41">
+        <li id="section-42">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-41">&#182;</a>
+                <a class="pilcrow" href="#section-42">&#182;</a>
               </div>
               <p>In the above example, <code>name</code>, <code>lives</code>, and <code>score</code> are called “fields” or
 “attributes”. I like fields because it&#39;s shorter to say.</p>
@@ -656,11 +669,11 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
         </li>
         
         
-        <li id="section-42">
+        <li id="section-43">
             <div class="annotation">
               
               <div class="pilwrap for-h3">
-                <a class="pilcrow" href="#section-42">&#182;</a>
+                <a class="pilcrow" href="#section-43">&#182;</a>
               </div>
               <h3>Adding fields to a table.</h3>
 
@@ -669,11 +682,11 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
         </li>
         
         
-        <li id="section-43">
+        <li id="section-44">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-43">&#182;</a>
+                <a class="pilcrow" href="#section-44">&#182;</a>
               </div>
               <p>Let&#39;s add the fields we specified for <code>player_two</code> to our <code>player_one</code> table</p>
 
