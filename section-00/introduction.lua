@@ -135,7 +135,7 @@ end
 -- a player's name, score, and remaining lives. We could use three variables.
 local player_name, player_score, player_lives
 
--- but what happens when we have two or three players? That's a lot of
+-- But what happens when we have two or three players? That's a lot of
 -- variables! Tables are Lua's way of organizing data.
 
 -- ### Creating Tables
