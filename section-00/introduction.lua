@@ -130,7 +130,7 @@ end
 
 --## Lua Tables
 
--- Most of the time, we don't just want a single variable, we have a collection
+-- Most of the time we don't just want a single variable; we have a collection
 -- of values that are all related to each other. Maybe we're keeping track of
 -- a player's name, score, and remaining lives. We could use three variables.
 local player_name, player_score, player_lives
