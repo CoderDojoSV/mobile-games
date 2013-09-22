@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>An Introduction to Lua</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h1">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <h1>An Introduction to Lua</h1>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="function"><span class="keyword">function</span> <span class="title">consider</span><span class="params">(thought)</span></span> 
+	<span class="keyword">return</span>
+<span class="keyword">end</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>The Lua programming language was created in Brazil in 1993 to be used
+as the language to enter and fetch data in a larger system. Because it was
+so small, simple, and <em>fast</em> it became the language of choice for video
+game developers who wanted to write their game engine in a systems language
+like C but allow the game designers to make surface changes using a much
+simpler language.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Today Lua is one of the most popular programming languages for games
+development. It&#39;s used by Valve, Blizzard, Crytek, BioWare, and Sonic Team, 
+as well as many others.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h2">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <h2>Lua Values</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>The Lua language has three types of scalar (singular) values:</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <h3>Strings</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Strings are words for people and they are written using double quotes (“ ”).
+Lua ignores the words in strings and treats all other words as Lua code.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+consider( <span class="string">"hello"</span> ) 
+consider( <span class="string">"Do you know the way to San Jose?"</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <h3>Numbers</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Numbers are just like you remember them from math! You can perform arithmetic
+on them and use Lua as your calculator if you want.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">5</span> )
+consider( <span class="number">4</span> + <span class="number">3</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>Operations in Lua follow the algebraic order of operations remember PEMDAS?</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <ul>
+<li><strong>P</strong>arentheses</li>
+</ul>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( (<span class="number">5</span> + <span class="number">3</span>) * <span class="number">2</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <ul>
+<li><strong>E</strong>xponents</li>
+</ul>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">2</span> ^ <span class="number">4</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <ul>
+<li><strong>M</strong>ultiplication</li>
+</ul>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">2</span> * <span class="number">6</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <ul>
+<li><strong>D</strong>ivision</li>
+</ul>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">6</span> / <span class="number">3</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <ul>
+<li><strong>A</strong>ddition</li>
+</ul>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">5</span> + <span class="number">9</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <ul>
+<li><strong>S</strong>ubtraction</li>
+</ul>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">9</span> + <span class="number">3</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Numbers in Lua are all decimals. Some languages treat whole numbers and
+decimal numbers differently, but Lua doesn‘t. There is one operation that we
+haven’t mentioned yet. It&#39;s called “mod” or “remainder” and uses the <code>%</code> sign
+but it‘s not a percentage. It’s the remainder left over after you do long
+division. For example, if you want to find out whether a number is even or
+odd, you can check by looking at the remainder when you divide by two. If
+it‘s 1, the number is odd. Otherwise it’s 0.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">5</span> % <span class="number">2</span> == <span class="number">1</span> )
+consider( <span class="number">6</span> % <span class="number">2</span> == <span class="number">0</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>You can even do this for super huge numbers like 17^13</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="number">17</span>^<span class="number">13</span> % <span class="number">2</span> == <span class="number">0</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <h3>True, false, and nil</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <p>true and false are called “boolean” values, named after George Boole, an
+English mathematician who studied logic. His work laid the foundations for
+the computers of today!</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <p>Lua has boolean values <code>true</code> and <code>false</code> and a special value called <code>nil</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">true</span> )
+consider( <span class="keyword">false</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>Nil means “no value”.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">nil</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p>There are also logical operations</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p><code>and</code> is only true of both the left and right side are true</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">true</span> <span class="keyword">and</span> <span class="keyword">true</span> == <span class="keyword">true</span> )
+consider( <span class="keyword">true</span> <span class="keyword">and</span> <span class="keyword">false</span> == <span class="keyword">false</span> )
+consider( <span class="keyword">false</span> <span class="keyword">and</span> <span class="keyword">true</span> == <span class="keyword">false</span> )
+consider( <span class="keyword">false</span> <span class="keyword">and</span> <span class="keyword">false</span> == <span class="keyword">false</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
+              </div>
+              <p><code>or</code> is true of either the left or the right side are true</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>consider( <span class="keyword">true</span> <span class="keyword">or</span> <span class="keyword">true</span> == <span class="keyword">true</span> )
+consider( <span class="keyword">true</span> <span class="keyword">or</span> <span class="keyword">false</span> == <span class="keyword">true</span> )
+consider( <span class="keyword">false</span> <span class="keyword">or</span> <span class="keyword">true</span> == <span class="keyword">true</span> )
+consider( <span class="keyword">false</span> <span class="keyword">or</span> <span class="keyword">false</span> == <span class="keyword">false</span> )</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h2">
+                <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <h2>Lua Variables</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-27">&#182;</a>
+              </div>
+              <p>In Lua, you keep track of your stuff with variables. A variable isn‘t like
+a variable in algebra. It’s really just a name you give to something so you
+can refer to it later. You could also think of variables as a box that you&#39;ll
+put values into. There are two types of variables in Lua, global and local.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-28">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-28">&#182;</a>
+              </div>
+              <h3>Local variables</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-29">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-29">&#182;</a>
+              </div>
+              <p>Local variables are created with the <code>local</code> keyword they belong to the area
+around the variable declaration.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> my_name</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-30">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-30">&#182;</a>
+              </div>
+              <p>You can also create a variable with a starting value. If you don&#39;t specify a
+starting value, the variable will start out as <code>nil</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> my_favorite_color = <span class="string">"purple"</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-31">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-31">&#182;</a>
+              </div>
+              <h3>Global variables</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-32">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-32">&#182;</a>
+              </div>
+              <p>Sometimes you want a variable to be shared across your entire game. You can
+use a global variable to do this. Maybe you want to keep track of whose turn
+it is in a game. To create a global variable, just assign a value to a new
+variable without using the <code>local</code> keyword</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>current_turn = <span class="number">1</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-33">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-33">&#182;</a>
+              </div>
+              <h3>Accessing a variable&#39;s value</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-34">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-34">&#182;</a>
+              </div>
+              <p>To access a variable‘s value, just use the variable’s name where you want the
+value to be used.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">if</span> current_turn == <span class="number">1</span> <span class="keyword">then</span>
+	consider( <span class="string">"player one's turn"</span> )
+<span class="keyword">else</span>
+	consider( <span class="string">"player two's turn"</span> )
+<span class="keyword">end</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-35">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h2">
+                <a class="pilcrow" href="#section-35">&#182;</a>
+              </div>
+              <h2>Lua Tables</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-36">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-36">&#182;</a>
+              </div>
+              <p>Most of the time, we don‘t just want a single variable, we have a collection
+of values that are all related to each other. Maybe we’re keeping track of
+a player&#39;s name, score, and remaining lives. We could use three variables.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> player_name, player_score, player_lives</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-37">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-37">&#182;</a>
+              </div>
+              <p>but what happens when we have two or three players? That&#39;s a lot of
+variables! Tables are Lua&#39;s way of organizing data.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-38">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-38">&#182;</a>
+              </div>
+              <h3>Creating Tables</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-39">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-39">&#182;</a>
+              </div>
+              <p>Creating tables is easy. You can make them empty:</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> player_one = {}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-40">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-40">&#182;</a>
+              </div>
+              <p>Or give them a starting set of values</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> player_two = {
+	name = <span class="string">"unknown"</span>,
+	lives = <span class="number">3</span>,
+	score = <span class="number">0</span>,
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-41">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-41">&#182;</a>
+              </div>
+              <p>In the above example, <code>name</code>, <code>lives</code>, and <code>score</code> are called “fields” or
+“attributes”. I like fields because it&#39;s shorter to say.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-42">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h3">
+                <a class="pilcrow" href="#section-42">&#182;</a>
+              </div>
+              <h3>Adding fields to a table.</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-43">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-43">&#182;</a>
+              </div>
+              <p>Let&#39;s add the fields we specified for <code>player_two</code> to our <code>player_one</code> table</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>player_one.name = <span class="string">"who know's"</span>
+player_one.lives = <span class="number">3</span>
+player_one.score = <span class="number">0</span></pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
