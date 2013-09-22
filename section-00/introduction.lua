@@ -66,7 +66,7 @@ consider( 17^13 % 2 == 0 )
 
 -- ### True, false, and nil
 
--- true and false are called "boolean" values, named after George Boole, an
+-- `true` and `false` are called "boolean" values, named after George Boole, an
 -- English mathematician who studied logic. His work laid the foundations for
 -- the computers of today!
 
