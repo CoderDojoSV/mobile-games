@@ -101,7 +101,7 @@ consider( false or false == false )
 
 -- ### Local variables
 
--- Local variables are created with the `local` keyword they belong to the area
+-- Local variables are created with the `local` keyword. They belong to the area
 -- around the variable declaration.
 local my_name
 
