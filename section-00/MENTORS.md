@@ -12,5 +12,7 @@ making progress.
 For those who do finish early, we have a set of Lua exercises which you should
 definitely do ahead of time so you're prepared to answer questions. Encourage
 the students to move to the exercises once they've played through the Hello
-game a few times.
+game a few times. The Lua exercises are distributed and run using repl.it
+because Corona doesn't ship with a usable standalone Lua interpreter and the
+overhead of setting one up is too high for a single night's work.
 
