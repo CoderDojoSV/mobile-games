@@ -114,7 +114,7 @@ local my_favorite_color = "purple"
 -- Sometimes you want a variable to be shared across your entire game. You can
 -- use a global variable to do this. Maybe you want to keep track of whose turn
 -- it is in a game. To create a global variable, just assign a value to a new
--- variable without using the `local` keyword
+-- variable without using the `local` keyword.
 current_turn = 1
 
 -- ### Accessing a variable's value
@@ -122,9 +122,9 @@ current_turn = 1
 -- To access a variable's value, just use the variable's name where you want the
 -- value to be used.
 if current_turn == 1 then
-	consider( "player one's turn" )
+	consider( "it's player one's turn" )
 else
-	consider( "player two's turn" )
+	consider( "it's player two's turn" )
 end
 
 
@@ -156,7 +156,7 @@ local player_two = {
 -- ### Adding fields to a table.
 
 -- Let's add the fields we specified for `player_two` to our `player_one` table
-player_one.name = "who know's"
+player_one.name = "who knows"
 player_one.lives = 3
 player_one.score = 0
 

@@ -523,7 +523,7 @@ starting value, the variable will start out as <code>nil</code>.</p>
               <p>Sometimes you want a variable to be shared across your entire game. You can
 use a global variable to do this. Maybe you want to keep track of whose turn
 it is in a game. To create a global variable, just assign a value to a new
-variable without using the <code>local</code> keyword</p>
+variable without using the <code>local</code> keyword.</p>
 
             </div>
             
@@ -557,9 +557,9 @@ value to be used.</p>
             </div>
             
             <div class="content"><div class='highlight'><pre><span class="keyword">if</span> current_turn == <span class="number">1</span> <span class="keyword">then</span>
-	consider( <span class="string">"player one's turn"</span> )
+	consider( <span class="string">"it's player one's turn"</span> )
 <span class="keyword">else</span>
-	consider( <span class="string">"player two's turn"</span> )
+	consider( <span class="string">"it's player two's turn"</span> )
 <span class="keyword">end</span></pre></div></div>
             
         </li>
@@ -693,7 +693,7 @@ variables! Tables are Lua&#39;s way of organizing data.</p>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>player_one.name = <span class="string">"who know's"</span>
+            <div class="content"><div class='highlight'><pre>player_one.name = <span class="string">"who knows"</span>
 player_one.lives = <span class="number">3</span>
 player_one.score = <span class="number">0</span></pre></div></div>
             
