@@ -77,7 +77,8 @@ consider( false )
 -- Nil means "no value".
 consider( nil )
 
--- There are also logical operations
+-- There are also logical operations that take boolean values and return
+-- different boolean values based on rules. Just like addition with numbers.
 
 -- `and` is only true of both the left and right side are true
 consider( true and true == true )
