@@ -97,7 +97,7 @@ consider( false or false == false )
 -- In Lua, you keep track of your stuff with variables. A variable isn't like
 -- a variable in algebra. It's really just a name you give to something so you
 -- can refer to it later. You could also think of variables as a box that you'll
--- put values into. There are two types of variables in Lua, global and local.
+-- put values into. There are two types of variables in Lua, local and global.
 
 -- ### Local variables
 
