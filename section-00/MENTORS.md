@@ -10,9 +10,13 @@ and those who are too shy to do so, make sure they don't flail and that they're
 making progress.
 
 For those who do finish early, we have a set of Lua exercises which you should
-definitely do ahead of time so you're prepared to answer questions. Encourage
-the students to move to the exercises once they've played through the Hello
-game a few times. The Lua exercises are distributed and run using repl.it
+definitely do when they're ready so you're prepared to answer questions.
+
+The introductory explanation of Lua is here for now:
+http://coderdojosv.github.io/mobile-games/section-00/docs/introduction.html
+
+Encourage the students to move to the exercises once they've played through the
+Hello game a few times. The Lua exercises are distributed and run using repl.it
 because Corona doesn't ship with a usable standalone Lua interpreter and the
 overhead of setting one up is too high for a single night's work.
 
