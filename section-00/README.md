@@ -50,6 +50,11 @@ is the "Open with" area. Select Brackets as the code editor and then push the
 
 #### On Windows
 
+Once Brackets is installed. Create a file and save it somewhere easy to keep
+track of as `test.lua`. Now find that file in the File Explorer and right click
+on it. Select "Open With > Choose Default Program" and make sure Brackets is the
+default.
+
 ### Creating a Corona Labs account
 
 Go to the [login and registration page](https://developer.coronalabs.com/user/register)
@@ -81,6 +86,33 @@ starting program. As soon as it opens, it will start playing. Check it out!
 ### Putting a game on your device
 
 #### On Android
+
+Android devices are free to develop for. Make sure the starter app is open in
+the Simulator and go to "File > Build > Android".
+
+*:warning: Windows users may not have the Java Development Kit installed. If you
+don't, Corona will tell you and direct you to the web page from which you
+download the JDK. Make sure you choose the 32 bit download irregardless of
+whether your system is 32 bit or 64 bit.*
+
+If Java is installed you'll see the build window for Android. Select an easy to
+remember folder for Corona to build the Android app into and press build.
+
+Once the build is done, select "Reveal in Finder" or "Show in File Explorer" and
+copy the apk file to your Android device. This process is different for nearly
+every Android phone and may require help from the phone's owner or an
+instructor.
+
+After the apk has been copied, you'll need to open it. Again, this process is
+different on almost every single Android device. If your phone did not come with
+a file browser application, you will need to get one. I trust [this one][fex]
+alone because it is open source software. If Android raises an error about
+development applications, you can go into your settings and enable apps from
+outside Google Play.
+
+Once it's installed, open it! You're all set!
+
+[fex]: https://play.google.com/store/apps/details?id=net.appositedesigns.fileexplorer
 
 #### On iOS
 
