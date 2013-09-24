@@ -84,6 +84,38 @@ starting program. As soon as it opens, it will start playing. Check it out!
 
 #### On iOS
 
+Apple normally requires developers to pay a $99 fee and register certificates in
+order to build applications. We're going to trade the ability to put apps in the
+app store for the ease of sharing one developer certificate among all students.
+
+Bring your iOS device to the lead instructor in order to have the developer
+profile installed. Once all the devices iOS devices have been registered, you'll
+get a USB drive with the developer certificate and provisioning profile.
+
+To install the certificate, open the USB drive in Finder and double click on it.
+You may be asked to enter your password in order to open the keychain. 
+
+Copy the provisioning profile to `~/Library/MobileDevice/Provisioning Profiles/`
+The ~ represents your home folder, which has a house next to it in Finder's
+sidebar.
+
+Once you've done that, close and re-open the Corona Simulator and select the
+starter game from "Open recent" in the File menu. Then select File > Build > iOS
+
+Leave all the options alone except for the Code Signing Identity. Select "iPhone
+Developer Steven Ragnarök ... [Coder Dojo SV]", then press the Build button.
+
+*:warning: It's important you don't close or modify the Simulator window while
+your app is building*
+
+When it's finished building you will get some warnings about not passing Apple's
+standards which you can ignore for now. Click the "Show in Finder..." option
+then drag the program to the iTunes icon on the dock. Once you've done this, you
+can connect your device to the computer using your USB cable and copy the app to
+your device using iTunes.
+
+Lastly, test it out on the device!
+
 ## Wrapping up
 
 By now you've got everything set up! You can peruse the game's source, which is
