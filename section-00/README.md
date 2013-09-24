@@ -159,7 +159,7 @@ examples below.
 
 ## The Lua Programming Language
 
-[Introduction to lua][intro]
+Check out this sweet [introduction to Lua][intro]!
 [intro]: http://coderdojosv.github.io/mobile-games/section-00/docs/introduction.html
 
 You can also [Test Lua in the browser](http://repl.it/languages/lua).
