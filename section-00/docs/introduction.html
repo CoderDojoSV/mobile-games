@@ -1433,12 +1433,12 @@ as objects.</p>
                 <a class="pilcrow" href="#section-90">&#182;</a>
               </div>
               <p>Now let&#39;s create a function to use as an introduce method. Where one person
-will introduce themselves to the other.</p>
+will introduce themselves to the other. The <code>..</code> here is called a string
+concatenation. It just connects two strings and makes them one.</p>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>
-<span class="keyword">local</span> introduce = function(self, other)
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> introduce = function(self, other)
 	<span class="built_in">print</span>(<span class="string">"Hi "</span> .. other.name .. <span class="string">" my name is "</span> .. self.name ..<span class="string">". I like "</span> ..
 		self.favorite_food .. <span class="string">". What's your favorite?"</span>)
 <span class="keyword">end</span></pre></div></div>
