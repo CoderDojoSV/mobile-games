@@ -162,5 +162,5 @@ examples below.
 Check out this sweet [introduction to Lua][intro]!
 [intro]: http://coderdojosv.github.io/mobile-games/section-00/docs/introduction.html
 
-You can also [Test Lua in the browser](http://repl.it/languages/lua).
+You can also [test Lua in the browser](http://repl.it/languages/lua).
 
