@@ -318,11 +318,12 @@ end
 
 -- For loops are specially designed to help you make a loop where you do
 -- the same thing but with different values each time. Let's say you wanted to
--- calculate 9 factorial. Which is 9 * 8 * 7 * 6 * 5 * 2 * 1
+-- calculate 9 factorial. Which is 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1
 local sum = 1
-for i = 1, 100 do
+for i = 1, 9 do
 	sum = i * sum
 end
+consider( sum == 362880 )
 
 -- There's also a special form of a for loop that repeatedly calls a function
 -- until the value is nil. This is really useful for say, processing words in
@@ -352,4 +353,45 @@ consider( add_three_numbers(3, 7, 10) )
 
 -- ## Lua Methods
 
+-- Some languages, including Lua have facilities for Object Oriented
+-- Programming. Object Oriented Programming (or OOP) as it is commonly called
+-- is a way of organizing code to make it easier to think about and use. It
+-- comes from one of the original languages designed to be friendly to new
+-- young programmers, but it has proved so useful that it's now a large pillar
+-- of commercial and open source software as well!
 
+-- In Lua, the primary facility for OOP that we'll be using is the "method".
+-- Methods in Lua are functions where the first argument is always the table
+-- that the function is stored in. This is why we sometimes refer to our tables
+-- as objects.
+
+-- Let's do an example. Suppose we have two people, Jim and Suzie.
+local Jim = { name = "Jim", favorite_food = "ice cream" }
+local Suzie = { name = "Suzie", favorite_food = "brocolli" }
+
+-- Now let's create a function to use as an introduce method. Where one person
+-- will introduce themselves to the other. The `..` here is called a string
+-- concatenation. It just connects two strings and makes them one.
+local introduce = function(self, other)
+	print("Hi " .. other.name .. " my name is " .. self.name ..". I like " ..
+		self.favorite_food .. ". What's your favorite?")
+end
+
+-- We could use this function just as it is, like a function. But if we want
+-- to attach the function to Jim or Suzie so we can keep everything in one
+-- package, we'll end up with lines of code like:
+--     Jim.introduce(Jim, Suzie)
+-- Which is cumbersome to write and even harder to read.
+
+-- Instead we can attach the introduce function to both Jim and Suzie and
+-- call it using the method syntax, which uses a `:` in place of a dot.
+Jim.introduce = introduce
+Suzie.introduce = introduce
+
+Jim:introduce(Suzie)
+
+-- Note that these two lines do exactly the same thing!
+Suzie.introduce(Suzie, Jim)
+Suzie:introduce(Jim)
+
+-- And now you know enough Lua to have fun and make stuff!

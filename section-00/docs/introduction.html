@@ -1267,14 +1267,15 @@ done it just keeps going with the next part of the code.</p>
               </div>
               <p>For loops are specially designed to help you make a loop where you do
 the same thing but with different values each time. Let&#39;s say you wanted to
-calculate 9 factorial. Which is 9 <em> 8 </em> 7 <em> 6 </em> 5 <em> 2 </em> 1</p>
+calculate 9 factorial. Which is 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1</p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre><span class="keyword">local</span> sum = <span class="number">1</span>
-<span class="keyword">for</span> i = <span class="number">1</span>, <span class="number">100</span> <span class="keyword">do</span>
+<span class="keyword">for</span> i = <span class="number">1</span>, <span class="number">9</span> <span class="keyword">do</span>
 	sum = i * sum
-<span class="keyword">end</span></pre></div></div>
+<span class="keyword">end</span>
+consider( sum == <span class="number">362880</span> )</pre></div></div>
             
         </li>
         
@@ -1369,6 +1370,141 @@ consider( add_three_numbers(<span class="number">3</span>, <span class="number">
                 <a class="pilcrow" href="#section-86">&#182;</a>
               </div>
               <h2>Lua Methods</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-87">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-87">&#182;</a>
+              </div>
+              <p>Some languages, including Lua have facilities for Object Oriented
+Programming. Object Oriented Programming (or OOP) as it is commonly called
+is a way of organizing code to make it easier to think about and use. It
+comes from one of the original languages designed to be friendly to new
+young programmers, but it has proved so useful that it&#39;s now a large pillar
+of commercial and open source software as well!</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-88">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-88">&#182;</a>
+              </div>
+              <p>In Lua, the primary facility for OOP that we&#39;ll be using is the “method”.
+Methods in Lua are functions where the first argument is always the table
+that the function is stored in. This is why we sometimes refer to our tables
+as objects.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-89">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-89">&#182;</a>
+              </div>
+              <p>Let&#39;s do an example. Suppose we have two people, Jim and Suzie.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="keyword">local</span> Jim = { name = <span class="string">"Jim"</span>, favorite_food = <span class="string">"ice cream"</span> }
+<span class="keyword">local</span> Suzie = { name = <span class="string">"Suzie"</span>, favorite_food = <span class="string">"brocolli"</span> }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-90">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-90">&#182;</a>
+              </div>
+              <p>Now let&#39;s create a function to use as an introduce method. Where one person
+will introduce themselves to the other.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="keyword">local</span> introduce = function(self, other)
+	<span class="built_in">print</span>(<span class="string">"Hi "</span> .. other.name .. <span class="string">" my name is "</span> .. self.name ..<span class="string">". I like "</span> ..
+		self.favorite_food .. <span class="string">". What's your favorite?"</span>)
+<span class="keyword">end</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-91">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-91">&#182;</a>
+              </div>
+              <p>We could use this function just as it is, like a function. But if we want
+to attach the function to Jim or Suzie so we can keep everything in one
+package, we&#39;ll end up with lines of code like:
+    Jim.introduce(Jim, Suzie)
+Which is cumbersome to write and even harder to read.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-92">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-92">&#182;</a>
+              </div>
+              <p>Instead we can attach the introduce function to both Jim and Suzie and
+call it using the method syntax, which uses a <code>:</code> in place of a dot.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Jim.introduce = introduce
+Suzie.introduce = introduce
+
+Jim:introduce(Suzie)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-93">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-93">&#182;</a>
+              </div>
+              <p>Note that these two lines do exactly the same thing!</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Suzie.introduce(Suzie, Jim)
+Suzie:introduce(Jim)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-94">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-94">&#182;</a>
+              </div>
+              <p>And now you know enough Lua to have fun and make stuff!</p>
 
             </div>
             
