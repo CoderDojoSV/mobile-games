@@ -72,17 +72,17 @@ the downloaded game into a folder.
 
 [starter-dl]: https://github.com/nuclearsandwich/hello-corona/archive/master.zip
 
-## Running it in the simulator
+### Running it in the simulator
 
 Open the Corona Simulator. Once it's been opened, you will need to log into the
 Simulator itself. Once you've done so, you can open the `main.lua` file from the
 starting program. As soon as it opens, it will start playing. Check it out!
 
-## Putting a game on your device
+### Putting a game on your device
 
-### On Android
+#### On Android
 
-### On iOS
+#### On iOS
 
 ## Wrapping up
 
