@@ -3,6 +3,7 @@
 This section will focus on the installation and setup of [Corona SDK](http://coronalabs.com/).
 Students will:
 
+* Install a code editor
 * Setup a Corona SDK account
 * Install the Corona SDK software
 * Run a sample Corona application on their mobile device or emulator
@@ -21,6 +22,34 @@ that it is *cross platform* meaning it can help you make games for multiple
 types of devices. So if you have an Android device or an iOS device, you can
 write your game once and have it run in both places.
 
+## Getting a code editor
+
+There are many code editors in the world and everyone eventually picks a
+favorite. The simple editors are the best and the editor we'll be using,
+[Brackets][] is far and away one of the simplest. Follow [this link][bracketsdl]
+to download and install brackets.
+
+[Brackets]: http://brackets.io
+[bracketsdl]: http://download.brackets.io
+
+### Setting Brackets as the default code editor.
+
+#### On Mac OS X
+
+Open Brackets and create a new file. If you want you can put some sample text in
+it like
+
+    print("Hello, kitty!")
+
+then save it as `test.lua`. Make sure you pay attention to where you saved it.
+
+Once you've saved it, find the file in Finder and select it with a single click.
+Then press `command + i` to open the file info. Near the bottom of the info pane
+is the "Open with" area. Select Brackets as the code editor and then push the
+"Change All.." button.
+
+#### On Windows
+
 ### Creating a Corona Labs account
 
 Go to the [login and registration page](https://developer.coronalabs.com/user/register)
@@ -38,27 +67,36 @@ Follow the instructions given to install it for your platform.
 
 ### Get the starter game
 
+You can download the code for the starter game from [here][starter-dl] and unzip
+the downloaded game into a folder.
+
+[starter-dl]: https://github.com/nuclearsandwich/hello-corona/archive/master.zip
+
+## Running it in the simulator
+
+Open the Corona Simulator. Once it's been opened, you will need to log into the
+Simulator itself. Once you've done so, you can open the `main.lua` file from the
+starting program. As soon as it opens, it will start playing. Check it out!
+
 ## Putting a game on your device
 
-## Getting a code editor
+### On Android
 
-There are many code editors in the world and everyone eventually picks a
-favorite. The simple editors are the best and the editor we'll be using,
-[Brackets][] is far and away one of the simplest. Follow [this link][bracketsdl]
-to download and install brackets.
+### On iOS
 
-[Brackets]: http://brackets.io
-[bracketsdl]: http://download.brackets.io
+## Wrapping up
 
-### Setting Brackets as the default code editor.
+By now you've got everything set up! You can peruse the game's source, which is
+all in the `main.lua` file. You can also check out [the annotated source][anno]
+for the game if you're curious but the smart thing to do is check out the Lua
+examples below.
 
-#### On Mac OS X
-
-#### On Windows
+[anno]: http://nuclearsandwich.com/hello-corona/main.html
 
 ## The Lua Programming Language
 
-[Testing Lua in the browser](http://repl.it/languages/lua)
+[Introduction to lua][intro]
+[intro]: http://coderdojosv.github.io/mobile-games/docs/introduction.html
 
-[Welcome to Lua Worksheet][worksheet]
-[worksheet]: #
+You can also [Test Lua in the browser](http://repl.it/languages/lua).
+
