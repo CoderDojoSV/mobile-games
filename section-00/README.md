@@ -1,4 +1,4 @@
-# Section 0: Installation and Introduction to Corona SDK and Lua
+# Installation and Introduction to Corona SDK and Lua
 
 This section will focus on the installation and setup of [Corona SDK](http://coronalabs.com/).
 Students will:
@@ -55,14 +55,14 @@ track of as `test.lua`. Now find that file in the File Explorer and right click
 on it. Select "Open With > Choose Default Program" and make sure Brackets is the
 default.
 
-### Creating a Corona Labs account
+## Creating a Corona Labs account
 
 Go to the [login and registration page](https://developer.coronalabs.com/user/register)
 for Corona Labs and create a new account. Make sure your password and email
 address are correct. You *will* need them. Once you've created an account, log
 in. 
 
-### Downloading the Corona SDK
+## Downloading the Corona SDK
 
 After you've logged in you can [Download the Corona SDK](https://developer.coronalabs.com/downloads/coronasdk)
 
