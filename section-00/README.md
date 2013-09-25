@@ -157,7 +157,7 @@ all in the `main.lua` file. You can also check out [the annotated source][anno]
 for the game if you're curious but the smart thing to do is check out the Lua
 examples below.
 
-[anno]: http://nuclearsandwich.com/hello-corona/main.html
+[anno]: http://nuclearsandwich.com/hello-corona/docs/main.html
 
 ## The Lua Programming Language
 
