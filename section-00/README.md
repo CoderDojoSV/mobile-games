@@ -108,7 +108,7 @@ different on almost every single Android device. If your phone did not come with
 a file browser application, you will need to get one. I trust [this one][fex]
 alone because it is open source software. If Android raises an error about
 development applications, you can go into your settings and enable apps from
-outside Google Play. On Mac OS X, you may also need the [Android File Transer][]
+outside Google Play. On Mac OS X, you may also need the [Android File Transfer][]
 
 [Android File Transfer]: http://www.android.com/filetransfer/
 
