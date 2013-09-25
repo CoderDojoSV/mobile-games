@@ -162,5 +162,7 @@ examples below.
 Check out this sweet [introduction to Lua][intro]!
 [intro]: http://coderdojosv.github.io/mobile-games/section-00/docs/introduction.html
 
-You can also [test Lua in the browser](http://repl.it/languages/lua).
+You can also [test Lua in the browser](http://repl.it/languages/lua). Try
+copying the [exercises][koans] from here and pasting them in repl.it.
 
+[koans]: https://raw.github.com/CoderDojoSV/mobile-games/master/section-00/koans.lua
