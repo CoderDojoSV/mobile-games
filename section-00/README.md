@@ -93,7 +93,7 @@ the Simulator and go to "File > Build > Android".
 *:warning: Windows users may not have the Java Development Kit installed. If you
 don't, Corona will tell you and direct you to the web page from which you
 download the JDK. Make sure you choose the 32 bit download irregardless of
-whether your system is 32 bit or 64 bit.*
+whether your system is 32 bit or 64 bit.* 
 
 If Java is installed you'll see the build window for Android. Select an easy to
 remember folder for Corona to build the Android app into and press build.
@@ -108,7 +108,9 @@ different on almost every single Android device. If your phone did not come with
 a file browser application, you will need to get one. I trust [this one][fex]
 alone because it is open source software. If Android raises an error about
 development applications, you can go into your settings and enable apps from
-outside Google Play.
+outside Google Play. On Mac OS X, you may also need the [Android File Transer][]
+
+[Android File Transfer]: http://www.android.com/filetransfer/
 
 Once it's installed, open it! You're all set!
 
