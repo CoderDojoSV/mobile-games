@@ -192,10 +192,15 @@ Remember those stub functions we created earlier. It's time to populate them.
 Lastly, when we start the game, we need to make sure our `start()` function
 hides the unpause button and shows the pause button.
 
-
-
 ## Creating your own mazes
 
+Now that you've seen the default maze you can have fun creating your own. Go to
+town on the maze just as it is, or create a second maze, then perhaps a third.
+Modify the random code from robotfindskitten to choose a random maze when the
+game starts. If you want the maze to change each time you hit the play again
+button, you'll need to extract the code from line 204 to 212 into a new
+for loop that runs at the start of the play function. Then you can change the
+maze between games.
 
 [corona-source-zip]: https://github.com/nuclearsandwich/speedmaze-corona/archive/master.zip
 [annotated]: http://nuclearsandwich.com/speedmaze-corona/docs/main.html
