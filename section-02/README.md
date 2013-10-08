@@ -78,7 +78,7 @@ stopwatch.clock = 0.0
 Create some text that will display the time on the watch.
 
 ```lua
-stopwatch.displayText = display.newText(stopwatch:formatClock(), 100, 700,
+stopwatch.displayText = display.newText(stopwatch.clock, 100, 700,
 	native.systemFont, 48)
 ```
 
@@ -96,7 +96,7 @@ we'll explore them in the future.
 ```lua
 stopwatch.increment = function(timerData)
 	stopwatch.clock = stopwatch.clock + 1
-	stopwatch.displayText.text = stopwatch:formatClock()
+	stopwatch.displayText.text = stopwatch.clock
 end
 ```
 
@@ -145,7 +145,7 @@ set the clock back to zero and update the display.
 ```lua
 stopwatch.reset = function(watch)
 	watch.clock = 0
-	watch.displayText.text = watch:formatClock()
+	watch.displayText.text = watch.clock
 end
 ```
 
