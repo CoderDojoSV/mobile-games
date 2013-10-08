@@ -197,5 +197,5 @@ hides the unpause button and shows the pause button.
 ## Creating your own mazes
 
 
-[corona-source-zip]: 
-[annotated]: 
+[corona-source-zip]: https://github.com/nuclearsandwich/speedmaze-corona/archive/master.zip
+[annotated]: http://nuclearsandwich.com/speedmaze-corona/docs/main.html
