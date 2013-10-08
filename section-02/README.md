@@ -250,7 +250,7 @@ You and I might count the squares, moving square by square like this:
 The first square is one, then two, three, and so on...
 
 Computers do it differently though. Computers move *line by line* and count
-the number of squares.
+the number of squares that they've passed.
 
 ![counting by lines](chessboard_lines.png)
 
