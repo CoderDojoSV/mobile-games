@@ -37,6 +37,25 @@ now going to use an event listener to build a stopwatch object that
 displays the amount of time it takes you to run the maze. This is going to
 be our first feature that *you* build from scratch! Are you excited?
 
+### Side Quest: Corona SDK documentation
+
+Up to this point, you've seen very little of the Corona SDK itself, and have
+written plain Lua for 90% of the things we've done. When you have used the
+Corona SDK, it was in predetermined methods that you copied. But that isn't
+going to be the case from here on out. We're about to write a major feature
+from scratch using Corona's `timer` library. To do that, it'll help to know
+more about the library. Every good tool you will ever use as a programmer has
+some good documentation behind it. The documentation for Corona SDK is on the
+website <http://docs.coronalabs.com>. The documentation for the games you write
+in this course is the [annotated source code][annotated] along with the 
+lab section worksheets. Reading the entire Corona SDK manual can be
+tedious, which is why programmers often treat documentation as "reference"
+material. Meaning that instead of reading it all cover to cover, they
+search for the parts that they think will help them. Reading things cover to
+cover can be fun because you learn the full extend of what is possible.
+Tonight we are just going to refer to the timer section of the
+documentation.
+
 ### Creating a stopwatch object
 
 Above the definition of the `play()` and after the playButton around line 487
@@ -82,6 +101,10 @@ end
 ```
 
 ### Write a method that starts the stopwatch.
+
+Now it's time to use the Corona SDK. Check out the documentation for
+[timers](http://docs.coronalabs.com/api/library/timer/index.html) to get an
+explanation of the functions we'll need for our stopwatch.
 
 We use the perform with delay library function from Corona to have Corona call
 us when the timer runs out. We've set the timer to run ever 1000 milliseconds.
@@ -201,6 +224,41 @@ game starts. If you want the maze to change each time you hit the play again
 button, you'll need to extract the code from line 204 to 212 into a new
 for loop that runs at the start of the play function. Then you can change the
 maze between games.
+
+### Side Quest: Why do computers count funny?
+
+If you read the source code to speedmaze, you may have noticed something a bit
+odd. Our maze starts counting at 1, but we told our grid to start counting at 0.
+Also, most other computer languages you work with start counting at 0. Time
+for a quick vocabulary lesson:
+
+* *zero indexed*: We say that a program or language that starts counting at 0 is zero indexed.
+* *one indexed*: We say that a program or language that starts counting at 1 is one indexed.
+
+*Don't worry. There aren't any two indexed or three indexed languages. That would
+be ridiculous.*
+
+Historically, all computer languages are zero indexed because of the way
+computers count. This is best illustrated with a chess board.
+
+![plain chess board](chessboard_plain.png)
+
+You and I might count the squares, moving square by square like this:
+
+![counting by squares](chessboard_squares.png)
+
+The first square is one, then two, three, and so on...
+
+Computers do it differently though. Computers move *line by line* and count
+the number of squares.
+
+![counting by lines](chessboard_lines.png)
+
+At the first line, there's been no squares yet. At the second there has been
+a single square. At the next line there's been a third and then it stops at
+the last line having counted seven squares and ready for the final one. But
+it stops there because if it got to the last line, there'd be no square to
+follow it.
 
 [corona-source-zip]: https://github.com/nuclearsandwich/speedmaze-corona/archive/master.zip
 [annotated]: http://nuclearsandwich.com/speedmaze-corona/docs/main.html
