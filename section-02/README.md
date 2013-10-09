@@ -121,7 +121,7 @@ runner crosses the finish line.
 
 ```lua
 stopwatch.start = function(watch)
-	watch.timer = timer.performWithDelay(100, watch.increment, 0)
+	watch.timer = timer.performWithDelay(1000, watch.increment, 0)
 end
 ```
 
