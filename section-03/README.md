@@ -162,7 +162,7 @@ it. I usually do that in outline form right in my comments.
 
 -- If the Player taps with two fingers together then the fist bump disappears and a high five appears
 -- * I need to check that there's very little distance between my two fingers for the "together" portion of the check
--- * Since this takes me back to the start I probably need a while loop to go over and over again
+-- * Since this takes me back to the start I probably need a function I can call over and over again
 
 -- (Only if I have time) If the player waits too long to tap, the game starts over
 -- * I can use the timer library to do this
@@ -196,7 +196,31 @@ got stuck a ton writing the first three games for this class. It took me *days*
 to write them. The mentors are here to help you get unstuck. Keep this game
 small for now then make it a skyscraper later if you feel like it.
 
-Have fun!
+You might want to dive right in, or you might want to browse the side quests
+below for ideas. Either way, have fun!  
+
+## Side Quest: Game Structure
+
+Our games so far don't have a lot of *structure* because they are very simple.
+However, they still had some structure. In case you don't know what we mean when
+we talk about *structure*, we're talking about common parts that most games need
+in some form. These are like the walls of a room. Every room has a different set
+of things in it, but it still needs four walls (and hopefully) a door to be be
+called a room.
+
+Our first two games ([robotfindskitten][rfk] and [speedmaze][speedmaze]) both
+had `play()` functions that did most of the work. The purpose of the play
+function was to give us the ability to start the game over. Remember the sample
+game from the very first night? It had no play function and thus when you got to
+the end, you were stuck there. We want to avoid that for our game.
+
+We could use a while loop to do this, but if our game restarts somewhere in the
+middle. Such as during a game over, there is no clean way to go back to the
+start of the loop. Instead, it's best to use a function that encompasses all of
+our game code after the initial setup and calls itself repeatedly to start the
+game over.
+
+The very last line of our game code is calling the function for the first time.
 
 ## Side Quest: Detecting different touch types
 
