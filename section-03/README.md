@@ -232,7 +232,7 @@ multitouch support is not enabled by default because it takes up additional
 resources on some devices. Multitouch is enabled by adding the directive
 
 ```lua
-system.enable("multitouch")
+system.activate("multitouch")
 ```
 
 You only need to do this once so it shouldn't go in your main game function but
