@@ -222,6 +222,141 @@ game over.
 
 The very last line of our game code is calling the function for the first time.
 
+[rfk]: http://nuclearsandwich.github.io/robotfindskitten-corona/docs/main.html
+[speedmaze]: http://nuclearsandwich.github.io/speedmaze-corona/docs/main.html
+
 ## Side Quest: Detecting different touch types
 
+Detecting multiple touches is still more of an art than a science. In Corona,
+multitouch support is not enabled by default because it takes up additional
+resources on some devices. Multitouch is enabled by adding the directive
+
+```lua
+system.enable("multitouch")
+```
+
+You only need to do this once so it shouldn't go in your main game function but
+rather at the top of your file with any other initialization you do.
+
+In the past we've dealt with only one type of touch event. We check the
+`event.phase` attribute and make sure we only act at when the event phase is
+"began". There are other attributes of event that we haven't used. One of them
+is the `event.id` property. Each individual touch event has a unique id so that
+when you move your finger without picking it up, or pick it up after holding it
+down, you can determine that it was the same touch as when you started paying
+attention.
+
+This has many different uses but the one we're aiming for today is detecting
+two-finger touches. To do this we need to make sure that there are at least two
+different touch events happening concurrently.
+
+#### Two simultaneous touches
+
+One way to detect two simultaneous touches on an object is to store the touch
+event id and a touch count on the target object whenever an event is started and
+remove it at the end of the touch event. Check out the following touch event
+handler example.
+
+```lua
+touchScreen = function(event)
+	local target = event.target
+	if target.touches == nil then
+		target.touches = {count = 0	}
+	end
+
+	if event.phase == "began" then
+		target.touches[event.id] = true
+		target.touches.count = target.touches.count + 1
+	elseif event.phase == "ended"
+		target.touches[event.id] = nil
+		target.touches.count = target.touches.count - 1
+	end
+
+	if target.touches.count >= 2 then
+		-- Houston we have multitouch!
+	end
+end
+```
+
+#### Tracking the distance between two touches
+
+Now that we have two simultaneous touches, can we detect if those are two
+fingers together or two fingers apart?
+
+The best way I've found to do it with Corona SDK is store where each touch
+event occurs and calculate the distance between the two events. Storing the
+event coordinates could be as simple as saving the *x* and *y*
+coordinates of the event when it is began instead of just saving the event
+on the object as `true`. Our line above would change to
+
+```lua
+		target.touches[event.id] = { x = event.x, y = event.y }
+```
+
+This means you also need to check for "moved" events to update the *x* and
+*y* coordinates of the event as your player moves their fingers.
+
+```lua
+elseif event.phase == "moved" then
+	target.touches[event.id].x = event.x
+	target.touches[event.id].x = event.y
+elseif event.phase == "ended"
+```
+
+You could then use a mathematical [distance function][dist] to compute how
+far the two touches are from each other. You can log this distance by
+printing it out to the console using `print()` which is easy on Windows or you
+can create some text on the screen that prints the distance between two touches.
+This would be useful for testing. Can you build a little game whose only purpose
+is touch testing?
+
+[dist]: https://en.wikipedia.org/wiki/Distance_formula#Geometry
+
+In Lua a distance function might look like
+```lua
+distance = function(x1, y1, x2, y2)
+	return math.sqrt( (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) )
+end
+```
+
 ## Side Quest: Difficulty tuning the timer
+
+If you decided that your game should get more challenging as time goes on, you
+will need to set some parameters. Perhaps these are *global* variables that we
+discussed in the [introduction to Lua][intro] but we would be far better off if
+we included the parameter as an actual parameter to the `play` function. (see the
+[Game Structure][structure] side quest). If you set a parameter which is related
+to the amount of time the user has to respond, you can control the speed just by
+modifying the parameter on each run.
+
+Suppose your play function looked like this
+
+```lua
+local play = function(rate, score)
+-- all the guts of your function
+end
+```
+
+and at the end of your `main.lua` file you call the function with the initial
+parameters.
+```lua
+play(1, 0)
+```
+
+Then at the end of your function, you could have something like:
+
+```lua
+if userSuccessful then
+	play(rate + difficultyIncrease, score + 1)
+else
+	play(1, 0)
+end
+```
+
+In the above pseudocode, each time you run through the game, things will get
+a little harder and you can adjust how much harder by adjusting the size of the 
+`difficultyIncrease`. The best way to evaluate a difficulty constant is to play
+yourself. Are you bored? Make it harder. Do you struggle to keep after just a
+few rounds. Reduce the `difficultyIncrease` until you find a sweet spot.
+
+[intro]: http://coderdojosv.github.io/mobile-games/docs/introduction.html
