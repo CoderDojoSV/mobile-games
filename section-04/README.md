@@ -15,8 +15,8 @@ and use our own modules using code from some of our previous games.
 ## Getting the game template
 
 We've set up a game template for you that has the simplified configuration and
-build settings we created last week as well as the grid, obstacle, and character
-libraries that were extracted from robotfindskitten and speedmaze.
+build settings we created last week as well as the grid, controlpad, and
+character libraries that were extracted from robotfindskitten and speedmaze.
 
 ## Learning how to use the libraries
 
@@ -71,10 +71,6 @@ robot:enter(grid[0][0])
 
 ### Controller pad
 
-### Start and Pause buttons
-
-### Using an obstacle as a goal
-
 ## Other modules
 
 Corona SDK has quite a few interesting modules that we haven't even mentioned
@@ -114,9 +110,6 @@ library is frequently called *extraction*.
 Don't worry about performing these steps yourself (although you can if you want
 to).
 
-
 [grid]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/grid.md
 [character]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/character.md
-[obstacle]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/obstacle.md
 [controlpad]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/controlpad.md
-[button]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/button.md
