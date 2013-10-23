@@ -20,8 +20,8 @@ well as create your own brand new game using tools.
 [:rocket: Section 1][1]: Customize the game Robot Finds Kitten  
 [:rocket: Section 2][2]: Customize the game Speed Maze  
 [:rocket: Section 3][3]: Create your own game: High Five  
-[:rocket: Section 4][4]: Create your own game Avoid All The Things  
-Section 5: Something Amazing!
+[:rocket: Section 4][4]: Create your own game: Explorer  
+[:rocket: Section 5][5]: Create your own game: Avoid All The Things  
 
 ## Requirements
 
