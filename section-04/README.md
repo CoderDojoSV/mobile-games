@@ -96,20 +96,6 @@ this entire time and even though we're nearly at the last section you will still
 be learning constantly for the entire time you're a programmer.
 
 [introgame]: https://github.com/nuclearsandwich/hello-corona
-
-## Side Quest: Extracting the Grid
-
-We used a grid system in two different games so far, [robotfindskitten][rfk] and
-[speedmaze][speedmaze]. We're going to take that grid system and make it into a
-module. Taking existing code from a specific program and moving it into a
-library is frequently called *extraction*.
-
-[rfk]: https://github.com/nuclearsandwich/robotfindskitten-corona
-[speedmaze]: https://github.com/nuclearsandwich/speedmaze-corona
-
-Don't worry about performing these steps yourself (although you can if you want
-to).
-
 [grid]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/grid.md
 [character]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/character.md
 [controlpad]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/controlpad.md
