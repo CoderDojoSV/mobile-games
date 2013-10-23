@@ -18,6 +18,10 @@ We've set up a game template for you that has the simplified configuration and
 build settings we created last week as well as the grid, controlpad, and
 character libraries that were extracted from robotfindskitten and speedmaze.
 
+You can grab an empty starter template from [here][starter-template] or begin
+from my very simple explorer game [Colorado Smith][colorado-smith].
+
+
 ## Learning how to use the libraries
 
 Just like Corona SDK's documentation is available at
@@ -71,6 +75,30 @@ robot:enter(grid[0][0])
 
 ### Controller pad
 
+This example, taken from [Colorado Smith][colorado-smith] moves the player
+character and lets the enemy take a turn.
+
+```lua
+local controls = controlpad.newControlPad(0, 500, 100)
+controls:whenUpPressed(function()
+	colorado:enter(colorado.gridSquare:above())
+	enemyTurn()
+end)
+controls:whenDownPressed(function()
+	colorado:enter(colorado.gridSquare:below())
+	enemyTurn()
+end)
+controls:whenLeftPressed(function()
+	colorado:enter(colorado.gridSquare:left())
+	enemyTurn()
+end)
+controls:whenRightPressed(function()
+	colorado:enter(colorado.gridSquare:right())
+	enemyTurn()
+end)
+```
+
+
 ## Other modules
 
 Corona SDK has quite a few interesting modules that we haven't even mentioned
@@ -99,3 +127,5 @@ be learning constantly for the entire time you're a programmer.
 [grid]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/grid.md
 [character]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/character.md
 [controlpad]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/controlpad.md
+[starter-template]: https://github.com/CoderDojoSV/corona-game-template/archive/master.zip
+[colorado-smith]: https://github.com/nuclearsandwich/colorado-smith/archive/master.zip
