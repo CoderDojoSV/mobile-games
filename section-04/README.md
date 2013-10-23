@@ -128,4 +128,4 @@ be learning constantly for the entire time you're a programmer.
 [character]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/character.md
 [controlpad]: https://github.com/coderdojosv/corona-game-template/blob/master/docs/controlpad.md
 [starter-template]: https://github.com/CoderDojoSV/corona-game-template/archive/master.zip
-[colorado-smith]: https://github.com/nuclearsandwich/colorado-smith/archive/master.zip
+[colorado-smith]: https://github.com/nuclearsandwich/colorado-smith-corona/archive/master.zip
