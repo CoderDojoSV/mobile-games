@@ -57,7 +57,9 @@ computer programming to refer to change of various kinds. You can think of each
 delta value as speed. You can also read delta as "change in" so `deltaX` means
 "change in X" and `deltaY` means "change in Y". The `deltaAngle` will allow us
 to rotate our objects as they fly around. We also define an eachObstacle method
-so we can iterate over each obstacle.
+so we can iterate over each obstacle. The reason for specifying negative one or
+one is so that our flying obstacles don't all begin flying in the same
+direction.
 
 ```lua
 local obstacleImages = { "icecream.png", "yarn.png", "penguin.png" }
@@ -71,11 +73,12 @@ end
 
 local newObstacle = function()
 	local obstacle = display.newImageRect(obstacleImages[math.random(1, #obstacleImages)], 50, 50)
+	local negativeOneOrOne = {1, -1}
 	obstacle:setReferencePoint(display.CenterReferencePoint)
 	obstacle.x = 50
 	obstacle.y = 200
-	obstacle.deltaX = math.random(5,10)
-	obstacle.deltaY = math.random(5,10)
+	obstacle.deltaX = math.random(5,10) * negativeOneOrOne[math.random(1,2)]
+	obstacle.deltaY = math.random(5,10) * negativeOneOrOne[math.random(1,2)]
 	obstacle.deltaAngle = 20
 	obstacles[(#obstacles + 1)] = obstacle
 end
