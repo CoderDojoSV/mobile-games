@@ -163,6 +163,21 @@ end
 
 ## Tuning the difficulty
 
+Game design is a tricky art. If your game is too easy it gets stale and boring
+quickly. If it's too hard, your players lose interest. Difficulty tuning is a
+huge part of game design. There are also other strategies you can use. The game
+[Super Hexagon][] is amazingly challenging but compensates for this by making
+the game over to restart transition instant. [Katamari Damacy][] on the other
+hand is a fairly easy game to play but the fun is in picking up different and
+larger objects and exploring each world.
+
+To tune the difficulty of your game, adjust the delta ranges of obstacles as
+well as the timer value. Once you feel good about your difficulty level. Build
+your game and have someone else at your table play it. Challenge your mentor to
+play it.
+
 [template]: https://github.com/CoderDojoSV/corona-game-template/archive/master.zip
 [physics]: http://docs.coronalabs.com/api/library/physics/index.html
 [corona collisions]: http://www.coronalabs.com/blog/2013/07/23/tutorial-non-physics-collision-detection/
+[Super Hexagon]: http://superhexagon.com/
+[Katamari Damacy]: https://en.wikipedia.org/wiki/Katamari_damacy
