@@ -59,7 +59,8 @@ delta value as speed. You can also read delta as "change in" so `deltaX` means
 to rotate our objects as they fly around. We also define an eachObstacle method
 so we can iterate over each obstacle. The reason for specifying negative one or
 one is so that our flying obstacles don't all begin flying in the same
-direction.
+direction. We also need to clear all the obstacles when you get a Game Over.
+To do that we remove them from the display, then set them to nil.
 
 ```lua
 local obstacleImages = { "icecream.png", "yarn.png", "penguin.png" }
@@ -68,6 +69,13 @@ local obstacles = {}
 obstacles.eachObstacle = function(obstacles, doEach)
 	for i = 1, #obstacles do
 		doEach(obstacles[i])
+	end
+end
+
+obstacles.clearAll = function(obstacles)
+	for i = 1, #obstacles do
+		display.remove(obstacles[i])
+		obstacles[i] = nil
 	end
 end
 
@@ -152,7 +160,9 @@ end
 
 Then write a `detectCollisions` function that checks if the ship collides with
 any obstacles and make sure it's called by our `eachFrame` function. If any
-obstacle collides with the ship, call `resetGame`.
+obstacle collides with the ship, call `resetGame`. You might notice that this
+function isn't defined. What should happen when you reset the game? Write a
+function that does those things.
 
 ```lua
 local detectCollisions = function()
