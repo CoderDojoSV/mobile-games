@@ -179,8 +179,41 @@ well as the timer value. Once you feel good about your difficulty level. Build
 your game and have someone else at your table play it. Challenge your mentor to
 play it.
 
+## Bonus Level: Rotate the ship as you move
+
+The game would look a lot neater if the ship's nose rotated in the direction of
+travel.
+
+To calculate the direction we're dragging the ship in we use the trigonometric
+[arctangent][] function built into Lua's math library. This gives us the angle
+in radians, which we convert to degrees also using the math library.
+
+In our ship's touch handler we need to add this *before* we move the ship.
+Otherwise we lose the ship's old *x* and *y* locations.
+
+```lua
+local dx = event.x - ship.x
+local dy = ship.y - event.y
+local direction = (math.deg(math.atan2(dx, dy))) % 360 
+ship.rotation = direction
+```
+
+> You might be wondering why we subtract the old *x* from the new *x* but we
+> reverse this for the *y*-coordinate. The reason is simple because in
+> traditional geometry the *y* coordinate increases as you go "north" and
+> decreases as you go south but this is reversed in Corona (and most computer
+> coordinate systems) so we swapped the values in the calculation.
+
+Then in our global `reset()` function we need to reset the ship's rotation to 0
+degrees.
+
+```lua
+ship.rotation = 0
+```
+
 [template]: https://github.com/CoderDojoSV/corona-game-template/archive/master.zip
 [physics]: http://docs.coronalabs.com/api/library/physics/index.html
 [corona collisions]: http://www.coronalabs.com/blog/2013/07/23/tutorial-non-physics-collision-detection/
 [Super Hexagon]: http://superhexagon.com/
 [Katamari Damacy]: https://en.wikipedia.org/wiki/Katamari_damacy
+[arctangent]: https://en.wikipedia.org/wiki/Arctangent
