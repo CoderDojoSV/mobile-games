@@ -228,7 +228,9 @@ someone at your table.
 time goes on. If you build something cool that everyone can use, let us know so
 we can share it!
 
-5. Build awesome games!
+5. Build awesome games! Check out the Corona Sample programs in the CoronaSDK
+	 folder. On Mac OS X this is in `/Applications/CoronaSDK/SampleCode`. On
+Windows you can find the samples in `C:\Program Files (x86)\CoronaSDK\SampleCode`.
 
 [template]: https://github.com/CoderDojoSV/corona-game-template/archive/master.zip
 [physics]: http://docs.coronalabs.com/api/library/physics/index.html
