@@ -211,9 +211,29 @@ degrees.
 ship.rotation = 0
 ```
 
+## Now What?
+
+You might have noticed that this is the last section. Congratulations, you
+survived and hopefully learned a ton. Here's what to do next:
+
+1. Take some time to pick your favorite game that you made and share it with
+someone at your table.
+
+2. Pick something you want to learn next and ask your mentors about it.
+
+3. Check out our guide for [learning more][] about Corona SDK.
+
+4. Make sure you bookmark <https://github.com/coderdojosv/mobile-games> and
+<https://github.com/coderdojosv/corona-game-template> as both will be updated as
+time goes on. If you build something cool that everyone can use, let us know so
+we can share it!
+
+5. Build awesome games!
+
 [template]: https://github.com/CoderDojoSV/corona-game-template/archive/master.zip
 [physics]: http://docs.coronalabs.com/api/library/physics/index.html
 [corona collisions]: http://www.coronalabs.com/blog/2013/07/23/tutorial-non-physics-collision-detection/
 [Super Hexagon]: http://superhexagon.com/
 [Katamari Damacy]: https://en.wikipedia.org/wiki/Katamari_damacy
 [arctangent]: https://en.wikipedia.org/wiki/Arctangent
+[learning more]: ../LEARNING_MORE.md
